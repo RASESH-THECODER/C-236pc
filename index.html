@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <script>
+            let html ;
+            $(document).ready(function(){
+                $.ajax({
+                    url:"https://www.amazon.in/?&ext_vrnc=hi&tag=googinhydr1-21&ref=pd_sl_833o4zmtnn_b&adgrpid=55759171661&hvpone=&hvptwo=&hvadid=294130660745&hvpos=&hvnetw=g&hvrand=8494291274116856193&hvqmt=b&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007785&hvtargid=kwd-326600735004&hydadcr=5840_1914862&gclid=CjwKCAjwtIaVBhBkEiwAsr7-c4Vy-1FBr52KpPRh6yupLGWkJoUDAI3EUKaOsxH70QzIg8zv9TjDdxoCJ2EQAvD_BwE/profile?id={i}",
+                    success:function(data){
+                         html=data
+                        display_html()
+                    }
+                })
+            })
+            function display_html(){
+                $("body").append(html)
+                "http:ec2-3-13-85-11.us-east-2.compute.amazonaws.com/".removeClass()
+                "http:ec2-3-13-85-11.us-east-2.compute.amazonaws.com/static/images/login.png".addClass()
+            }
+        </script>
+    </body>
+</html>
